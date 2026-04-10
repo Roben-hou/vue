@@ -1,15 +1,11 @@
 <script setup lang="ts">
-const myname = 'nagi'
-const myhtml = '<span style="color:red">hou</span>'
+// 导入您刚才写的那个文件
+import Test1 from './views/vue基本语法/1.模版语法/1.插值表达式.vue'
+import Test2 from './views/vue基本语法/1.模版语法/2.动态绑定.vue'
+import Test3 from './views/vue基本语法/3条件渲染.vue'
 </script>
 
 <template>
-<div v-text="myname"></div>
-<div v-text="myname + 'sss'"></div>
-<div v-text="`${myname}` + '111'"></div>
-<div v-html="myhtml"></div>
+  <!-- 直接像写 HTML 标签一样把它放在页面上！ -->
+ <Test3 />
 </template>
-
-<style scoped>
-
-</style>
