@@ -10,7 +10,7 @@ function alertdoubleclick(e:Event,msg:string){
     alert(msg)
 }
 function enterhandler(e: KeyboardEvent) {
-    const target = e.target as HTMLInputElement
+    const target=e.target as HTMLInputElement
     console.log('enter',target.value)
 }
 function inputhandler(e:InputEvent){
