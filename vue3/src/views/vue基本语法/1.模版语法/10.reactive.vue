@@ -16,14 +16,16 @@ function changegame(){
 </script>
 
 <template>
-<div class="person">
-    <h2>修改汽车价格:{{ car.brand }}车,{{ car.price }}万</h2>
-    <button @click="changeCarprice">changeCarprice</button>
+<div>
+  <div class="person">
+      <h2>修改汽车价格:{{ car.brand }}车,{{ car.price }}万</h2>
+      <button @click="changeCarprice">changeCarprice</button>
+  </div>
+  <ul>
+      <li v-for="item in games" :key="item.id">{{ item.name }}</li>
+  </ul>
+  <button @click="changegame">changegame</button>
 </div>
-<ul>
-    <li v-for="item in games" :key="item.id">{{ item.name }}</li>
-</ul>
-<button @click="changegame">changegame</button>
 </template>
 
 <style>
