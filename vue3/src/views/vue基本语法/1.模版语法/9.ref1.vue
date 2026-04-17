@@ -36,12 +36,9 @@
 
 <style scoped>
 .person {
-  background-color: skyblue;
+  background-color: #4ba0dd;
   box-shadow: 0 0 10px;
-  border-radius: 10px;
   padding: 20px;
-}
-button {
-  margin: 0 5px;
+  border-radius: 10px;
 }
 </style>
