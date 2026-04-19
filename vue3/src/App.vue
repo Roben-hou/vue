@@ -16,12 +16,14 @@ import Test13 from './views/vue基本语法/1.模版语法/13.refandreactive.vue
 import Test14 from './views/vue基本语法/1.模版语法/14.torefs.vue'
 import Test15 from './views/vue基本语法/1.模版语法/15.computed计算属性.vue'
 import Test16 from './views/vue基本语法/1.模版语法/16.watch1.vue'
+import Test17 from './views/vue基本语法/1.模版语法/17.watch2.vue'
+import Test18 from './views/vue基本语法/1.模版语法/18.watch3.vue'
 </script>
 
 <template>
   <div class="container">
     <!-- 显示当前学习的第9课 -->
-    <Test16/>
+    <Test18/>
     
     <!-- 如果想看之前的课程，可以切换上面的组件 -->
     <!-- <Test14/> -->
