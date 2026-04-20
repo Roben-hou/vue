@@ -19,12 +19,13 @@ import Test16 from './views/vue基本语法/1.模版语法/16.watch1.vue'
 import Test17 from './views/vue基本语法/1.模版语法/17.watch2.vue'
 import Test18 from './views/vue基本语法/1.模版语法/18.watch3.vue'
 import Test19 from './views/vue基本语法/1.模版语法/19.watch4.vue'
+import Test20 from './views/vue基本语法/1.模版语法/20.watch5.vue'
 </script>
 
 <template>
   <div class="container">
     <!-- 显示当前学习的第9课 -->
-    <Test19/>
+    <Test20/>
     
     <!-- 如果想看之前的课程，可以切换上面的组件 -->
     <!-- <Test14/> -->

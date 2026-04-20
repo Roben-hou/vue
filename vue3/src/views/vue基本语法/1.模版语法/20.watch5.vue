@@ -23,12 +23,8 @@ function changesalary() {
 function changejob() {
     person.value.job={type:'teacher',salary:'10k'}
 }
-// 监听响应式对象中的某个属性,且该属性是基本数据类型，用函数形式
-// watch(()=>person.value.name,(value)=>{
-//     console.log('namechange',value)
-// }
-// )
-watch(()=>person.value.job,(value)=>{
+//监听多个ref对象,用数组形式
+watch([()=>person.value.job,()=>person.value.name],(value)=>{
     console.log('jobchange',value)
 },{deep:true}
 )
@@ -36,7 +32,7 @@ watch(()=>person.value.job,(value)=>{
 
 <template>
     <div class="person">
-    <h2>情况4:监听ref定义的对象中的某个属性</h2>
+    <h2>情况5:监听reactive定义的对象数据</h2>
     <h3>name:{{ person.name }}</h3>
     <h3>age:{{ person.age }}</h3>
     <h3>job.type:{{ person.job.type }}</h3>
