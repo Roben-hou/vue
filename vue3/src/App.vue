@@ -23,12 +23,25 @@ import Test20 from './views/vue基本语法/1.模版语法/20.watch5.vue'
 import Test21 from './views/vue基本语法/1.模版语法/21.watcheffert.vue'
 import Test22 from './views/vue基本语法/1.模版语法/22.标签的ref属性.vue'
 import Test23 from './views/vue基本语法/1.模版语法/23.接口type范型回顾.vue'
+import Test24 from './views/vue基本语法/1.模版语法/24.props的使用.vue'
+import { type Persons } from '@/types'
+import { reactive } from 'vue'
+let PersonList = reactive < Persons >( [
+  { id: 'x2301', name: 'nagi', age: 20 },
+  { id: 'x2302', name: 'luozipeng', age: 18 },
+  { id: 'x2303', name: 'hou', age: 19 },
+  { id: 'x2304', name: 'pengpeng', age: 0 }
+])
+let x=9
 </script>
 
 <template>
   <div class="container">
     <!-- 显示当前学习的第9课 -->
-    <Test23/>
+     <!-- 务必看懂以下代码
+     <h2 a="1+1" :b="1+1" c="x" :d="x"></h2> -->
+    <Test24 a="'haha'" :list="PersonList"/>
+
   </div>
 </template>
 
