@@ -15,11 +15,10 @@ let lastname = ref('')
 //         lastname.value = str2
 //     }
 // })
-
+//这样写是只读计算属性,如果想修改fullname,需要使用计算属性的set方法如上
 let fullname = computed(() => {
     return firstname.value.slice(0, 1).toUpperCase() + firstname.value.slice(1) + '-' + lastname.value.slice(0, 1).toUpperCase() + lastname.value.slice(1)
 })
-
 function changename() {
     fullname.value = 'jack-zhang'
 }
