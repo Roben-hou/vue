@@ -1,23 +1,38 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-
+//创建一个路由器。并暴露出去
+//第一步:引入createRouter,createWebHashHistory
+import { createRouter, createWebHistory } from "vue-router"
+//引入组件
+import Home from '@/pages/Home.vue'
+import News from '@/pages/News.vue'
+import About from '@/pages/About.vue'
+import Detail from '@/pages/detail.vue'
+//第二步:创建路由器
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
-      path: '/',
       name: 'home',
-      component: HomeView,
+      path: '/home',
+      component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+      name: 'news',
+      path: '/news',
+      component: News,
+      children: [
+        {
+          name: 'detail',
+          path: 'detail',
+          component: Detail
+        }
+      ]
     },
-  ],
-})
+    {
+      name: 'about',
+      path: '/about',
+      component: About
+    }
+  ]
 
+})
 export default router
