@@ -57,6 +57,8 @@ import { RouterLink,RouterView} from 'vue-router';
     text-shadow: 0 0 1px black;
 }
 .content{
+  justify-content: space-between;
+  align-items: flex-start;
     height: 300px;
     border-radius: 10px;
     margin-top: 10px;
@@ -64,4 +66,5 @@ import { RouterLink,RouterView} from 'vue-router';
     border: 1px solid black;
     background-color: rgb(234, 230, 230);
 }
+
 </style>

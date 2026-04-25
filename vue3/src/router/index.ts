@@ -5,7 +5,7 @@ import { createRouter, createWebHistory } from "vue-router"
 import Home from '@/pages/Home.vue'
 import News from '@/pages/News.vue'
 import About from '@/pages/About.vue'
-import Detail from '@/pages/detail.vue'
+import Detail from '@/pages/Detail.vue'
 //第二步:创建路由器
 const router = createRouter({
   history: createWebHistory(),
@@ -22,8 +22,14 @@ const router = createRouter({
       children: [
         {
           name: 'detail',
-          path: 'detail',
-          component: Detail
+          path: 'detail/:id/:tittles/:content',
+          component: Detail,
+          // 1. Props开启方式 (路由规则上开启)
+          props: true,
+          //写法2
+          // props(route) {
+          //   return route.query
+          // }
         }
       ]
     },
@@ -31,8 +37,11 @@ const router = createRouter({
       name: 'about',
       path: '/about',
       component: About
+    },
+    {
+      path: '/',
+      redirect: '/home'
     }
   ]
-
 })
 export default router

@@ -27,12 +27,15 @@ import Test24 from './views/vue基本语法/1.模版语法/24.props的使用.vue
 import Test25 from './views/vue基本语法/1.模版语法/25.vue3生命周期.vue'
 import Test26 from './views/vue基本语法/1.模版语法/26.hooks.vue'
 import Test27 from './views/vue基本语法/1.模版语法/27.route.vue'
-</script>
+import Test28 from './views/vue基本语法/1.模版语法/28.prepinia add.vue'
+import Test28_2 from './views/vue基本语法/1.模版语法/28.prepina2.vue'
+</script> 
 
 <template>
   <div class="container">
     <!-- 显示当前学习的第9课 -->
-<Test27/>
+    <Test28/>
+<Test28_2/>
 
   </div>
 </template>

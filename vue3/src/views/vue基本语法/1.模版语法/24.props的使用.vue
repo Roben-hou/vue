@@ -18,9 +18,9 @@ defineProps<{ list?: Persons }>()
 //接收list + 类型约束
 //defineProps<{list:Persons}>()
 //只接收list
-//defineProps(['a', 'list'])
+//defineProps(['list'])
 //接收list，同时将list保存到x中
-// let x = defineProps(['a', 'list'])
+// let x = defineProps([ 'list'])
 // console.log(x)
 </script>
 

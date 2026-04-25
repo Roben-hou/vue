@@ -1,6 +1,7 @@
 <template>
 <div class="home">
-<img src="https://bkimg.cdn.bcebos.com/pic/d833c895d143ad4bd11338700a484dafa40f4bfba863" alt="">
+  <h2>我是首页</h2>
+  <img src="https://bkimg.cdn.bcebos.com/pic/d833c895d143ad4bd11338700a484dafa40f4bfba863" alt="">
 </div>
 </template>
 
